@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    
+    <h:head>
+        <h:outputStylesheet library="css" name="styling.css"/>
+        <title>login page</title>
+    </h:head>
+    
+    <body>        
+        
+        <div class="main-container">
+            
+            <h:form class="container">
+             
+                <div class="input-group">
+
+                    <h:outputLabel for="username" styleClass="label1" value="Username"/>
+                    
+                    <div>
+                       <h:inputText id="username" styleClass="input-testing"/> 
+                    </div>
+                                     
+                </div>
+
+                <div class="input-group">
+
+                    <h:outputLabel for="password" styleClass="label1" value="Password"/>
+
+                    <div class="input-text" >
+
+                        <h:inputText id="password" styleClass="input-testing"/>
+                    </div>
+                </div>
+
+                <div class="input-group">
+
+                    <h:outputLabel for="department" styleClass="label1" value="Department"/>
+
+                    <div class="input-text" >
+
+                        <h:inputText id="department" styleClass="input-testing"/>
+                    </div>
+                </div>
+                <div class="input-text">
+
+                    <h:commandButton type="button" value="login" styleClass="input-testing btn"/>
+
+                </div>
+                <footer class="input-text">
+
+                    <h:commandLink>
+                        <h:outputText value="Forgot Password" styleClass="forgot"/>
+                    </h:commandLink>
+
+                </footer>            
+            
+            </h:form>
+        </div>
+        
+    </body>
+ 
+</html>
+

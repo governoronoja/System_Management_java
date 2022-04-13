@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="reg.css"/>
+    </h:head>
+    <h:body>
+        <div class="main-container">
+            
+            <div class="ui-fluid p-formgrid p-grid">
+                <div class="p-field p-col-12 p-md-6">
+                    <h:outputLabel for="firstname" value="Firstname" />
+                    <div>
+                        <h:inputText id="firstname" styleClass="input-testing"/>
+                    </div>               
+                </div>
+                <div class="p-field p-col-12 p-md-6">
+                    <h:outputLabel for="lastname" value="Lastname" />
+                    <div>
+                        <h:inputText id="lastname" styleClass="input-testing"/>
+                    </div>
+
+                </div>
+                <div class="p-field p-col-12">
+                    <h:outputLabel for="Username" value="username" />
+
+                    <div>
+                        <h:inputText id="username" styleClass="input-testing"/>
+                    </div>       
+                </div>
+                <div class="p-field p-col-12">
+                    <h:outputLabel for="email" value="Email" />
+
+                    <div>
+                        <h:inputText id="email" styleClass="input-testing"/>
+                    </div>       
+                </div>
+
+                <div class="p-field p-col-12 p-md-6">
+                    <h:outputLabel for="phonenumber" value="Phone Number" />
+                    <div>
+                        <h:inputText id="phonenumber" styleClass="input-testing"/>
+                    </div>
+
+                </div>
+                
+                <div class="p-field p-col-12 p-md-3">
+                    <h:outputLabel for="department" value="Department" />
+                    <h:selectOneMenu id="department" styleClass="input-testing">
+                        <f:selectItem itemLabel="Select One" itemValue="#{null}" noSelectionOption="true"/>
+                        <f:selectItem itemLabel="Admin" itemValue="sale" />
+                        <f:selectItem itemLabel="sales" itemValue="Customer service" />
+                        <f:selectItem itemLabel="Customer Service" itemValue="Option 3" />
+                    </h:selectOneMenu>
+                </div>
+                <div class="p-field p-col-12 p-md-3">
+                    <h:outputLabel for="password" value="Password" />
+                    <div>
+                        <h:inputText id="password" styleClass="input-testing"/>
+                    </div>
+
+                </div>
+                <div>
+                    <h:commandButton type="button" value="Next" styleClass="input-testing btn"/>
+                 </div>
+            </div>
+        </div>
+        
+    </h:body>
+</html>
+

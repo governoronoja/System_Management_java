@@ -1,0 +1,313 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 3, 2022, 10:32:36 AM
+    Author     : clement
+*/
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+body {
+    
+    height: 100vh;
+    
+    background-image: radial-gradient(#9CB5BA 20%, #bbe5ed 45%);
+}
+
+.main-container {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.ui-fluid {
+    
+    line-height: 1.8;
+    padding: 5px;
+    /*border: 3px solid #353c3d;*/
+    width: 278px;
+    height: 633px;
+    border-radius: 36px;
+    /*background-color: white*/
+
+}
+.p-field {
+    
+    display: block;
+    margin: 20px;
+    line-height: 1.5em;
+     
+}
+
+.input-testing {
+    
+    
+    border: 3px solid #353c3d;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%
+    
+}
+
+.btn {
+   
+    width: 225px;
+    margin-left: 20px;
+    margin-top: 7px
+    
+}
+.ui-fluid1 {
+    
+    line-height: 1.8;
+    padding: 5px;
+    border: 3px solid #353c3d;
+    width: 278px;
+    height: 508px;
+    border-radius: 36px;
+    background-color: white
+
+}
+
+.btn1 {
+   
+    width: 225px;
+    margin-left: 20px;
+    margin-top: 15px
+    
+}
+.input-testing1 {
+    
+    
+    border: 3px solid #353c3d;
+    padding: 5px;
+    border-radius: 10px;
+    width: 60%
+    
+}
+.big-container {
+    
+    /*background-color: greenyellow;*/
+    
+}
+
+
+a:link {
+    
+    text-decoration: none;
+    
+    
+    
+}
+
+.side-bar {
+    
+    /*border: 2px black solid;
+    background-color: palevioletred;*/
+    grid-row: 1 / 12;
+    grid-column: 1 / 3;
+    
+        
+     
+}
+
+.main-content {
+    
+    border: 2px black solid;
+    background-color: palegoldenrod;
+    grid-row: 2 / 12;
+    grid-column: 3 / -1 
+}
+.nav-bar {
+    
+    /*border: 2px black solid;
+    background-color: graytext;*/
+    grid-column: 3 / -1;
+    
+    
+    
+}
+.footer {
+    
+    /*border: 2px black solid;
+    background-color: orange;*/
+    grid-row: 12;
+    grid-column: 1 / -1 
+}
+.p-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    width: 100vw
+    
+}
+.for-side-bar {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+        
+}
+
+.Customer-bar {
+    
+    display: flex;    
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap
+    
+}
+.again {
+
+    /*background-color: palevioletred;
+    border: 2px black solid;*/
+    align-content: space-around;
+    margin: 50px auto;
+    padding: 15px;
+    
+           
+}
+.again:nth-of-type(5){
+    
+    flex-grow: 2;
+    
+}
+
+.input-bar {
+    
+    width: 100%
+}
+.cus-side {
+    
+    /*background-color: green;
+    border: 2px black solid;*/
+    line-height: 1.4em;
+    flex-grow: 0;
+    padding: 20px;
+    margin: 5px
+}
+.cus-side:nth-of-type(5) {
+    
+    flex-grow: 4;
+    
+}
+.cus-side-btn {
+    
+    display: flex;
+    width:50%;
+    
+        
+    
+}
+
+.cus-side-btn-child{
+    
+   margin: 9px;
+   
+    
+}
+.input-btn {
+    
+    /*border: 5px solid blue;*/
+    
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #102d33;
+    color: whitesmoke;
+    
+}
+.input-add {
+    
+   width: 20%;
+   margin: 0 auto;
+   padding: 5px;
+   border-radius: 7px;
+   background-color: #102d33;
+   color: whitesmoke;
+   /*border: 5px solid blue;*/
+       
+}
+.p-customers-search {
+    
+    border: 3px #9CB5BA solid;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #102d33;
+    color: whitesmoke
+    
+}
+.input-search {
+    
+    border: 3px solid #353c3d;
+    padding: 8px;
+    border-radius: 15px;
+    width: 60%;
+    margin-left: 40%
+}
+.foo-ter {
+    
+    display: flex;
+    height: 40%;
+    max-width:100%;
+    margin: 60px auto
+}
+
+.foo-ter-btn {
+    
+    /*border: 3px solid #353c3d;*/
+    margin-right: auto;
+    margin-left: 25px;
+    padding: 3px;
+    
+}
+.foo-ter-btn:nth-of-type(3) {
+    
+    margin-left: 60%;
+    
+}
+
+.log-out {
+    
+    padding: 10px;
+    background-color: #102d33;
+    color: whitesmoke;
+    border-radius: 10px
+    
+}
+.datatable {
+    
+    width: 100%;
+  
+}
+.table-col {
+    
+    background-color: #102d33;
+    color: whitesmoke;
+    padding: 10px;
+    
+    
+}
+.p-customers {
+    
+    color: #102d33;
+}
+.p-customers:hover {
+    
+    background-color: greenyellow;
+}
+.cus-side:hover{
+    
+    color: greenyellow;
+}

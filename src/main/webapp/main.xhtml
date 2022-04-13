@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Management</title>
+        <h:outputStylesheet library="css" name="reg.css"/>
+    </h:head>
+    <h:body>
+        <div class="big-container">
+            
+            <div class= "p-grid">
+            
+                <div class="side-bar">
+                    
+                    <div class="for-side-bar">
+                        
+                        <div class="cus-side">
+                            <h:commandLink>
+                            <h:outputText value="Customers Address" styleClass="p-customers"/>
+                            </h:commandLink>
+                        </div>  
+                        <div class="cus-side">
+                            <h:commandLink>
+                            <h:outputText value="Customer Add" styleClass="p-customers"/>
+                            </h:commandLink>
+                        </div>
+                        <div class="cus-side">
+                            <h:commandLink>
+                            <h:outputText value="Customer Order" styleClass="p-customers"/>
+                            </h:commandLink>
+                        </div>
+                        <div class="cus-side">
+                            <h:commandLink >
+                            <h:outputText value="Customer History" styleClass="p-customers"/>
+                            </h:commandLink>
+                        </div>
+                        <div class="cus-side">
+                            <h:outputLabel for="address1" value="To-Be-Replaced by users short profile" />
+                        </div>
+                        <div class="cus-side cus-side-btn">
+                            
+                            <div class="cus-side-btn-child">
+                                <h:commandButton type="button" value="edit" styleClass="input-btn"/>
+                            </div>
+                            <div class="cus-side-btn-child">
+                                <h:commandButton type="button" value="delete" styleClass="input-btn"/>
+                            </div>
+                            
+                        </div>
+                        <div class="cus-side ">
+                            <h:commandButton type="button" value="add new" styleClass="input-add"/>
+
+                        </div>
+
+                </div>
+                    
+                    
+                </div>
+
+                <div class="main-content">
+                    
+                    <div>
+                        <h:dataTable class="datatable" value="#{customersController.allCustomers}" var="customers">
+                            
+                            <h:column  headerClass="table-col" class="table-col">
+                                <f:facet name="header">
+                                    ID
+                                </f:facet>
+                                <h:outputText value="#{customers.id}"/>
+                            </h:column>
+                            <h:column headerClass="table-col" class="table-col">
+                                <f:facet name="header">
+                                    First Name
+                                </f:facet>
+                                <h:outputText value="#{customers.firstname}"/>
+                            </h:column>
+                            <h:column headerClass="table-col" class="table-col">
+                                <f:facet name="header">
+                                    Last Name
+                                </f:facet>
+                                <h:outputText value="#{customers.lastname}"/>
+                            </h:column>
+                            <h:column headerClass="table-col" class="table-col">
+                                <f:facet name="header">
+                                    Email
+                                </f:facet>
+                                <h:outputText value="#{customers.email}"/>
+                            </h:column>
+                            <h:column headerClass="table-col" class="table-col">
+                                <f:facet name="header">
+                                    Phone Number
+                                </f:facet>
+                                <h:outputText value="#{customers.phonenumber}"/>
+                            </h:column>
+                            <h:column headerClass="table-col" class="table-col">
+                                <f:facet name="header">
+                                    Username
+                                </f:facet>
+                                <h:outputText value="#{customers.username}"/>
+                            </h:column>
+                            <h:column headerClass="table-col" class="table-col">
+                                <f:facet name="header">
+                                    Registration Date
+                                </f:facet>
+                                <h:outputText value="#{customers.regDate}"/>
+                            </h:column>
+                            <h:column headerClass="table-col" class="table-col">
+                                <f:facet name="header">
+                                    Date Of Birth
+                                </f:facet>
+                                <h:outputText value="#{customers.dateOfBirth}"/>
+                            </h:column>
+                            <h:column headerClass="table-col" class="table-col">
+                                <f:facet name="header">
+                                    Subscription
+                                </f:facet>
+                                <h:outputText value="#{customers.subscription}"/>
+                            </h:column>
+                           
+                        </h:dataTable>
+                    </div>
+
+                </div>
+                
+                <div class="nav-bar">
+                    
+                    <div class="Customer-bar">
+                        
+                       <div class="again again1">
+                            <h:commandLink>
+                            <h:outputText value="Customers" styleClass="p-customers"/>
+                            </h:commandLink>
+                        </div>
+                        <div  class="again">
+                            <h:commandLink>
+                            <h:outputText value="Inventory" styleClass="p-customers"/>
+                            </h:commandLink>
+                        </div>
+                        <div class="again">
+                            <h:commandLink>
+                            <h:outputText value="Sales" styleClass="p-customers"/>
+                            </h:commandLink>
+                        </div>
+                        <div class="again">
+                            <h:commandLink>
+                            <h:outputText value="Staffs" styleClass="p-customers"/>
+                            </h:commandLink>
+                        </div> 
+                        
+                        <div class="again search-area">  
+                            <h:inputText id="password" styleClass="input-search"/> 
+                        </div>
+                        <div class="again">  
+                            <h:commandLink>
+                            <h:outputText value="Search" styleClass="p-customers-search"/>
+                            </h:commandLink>
+                        </div>
+                         
+                    </div>
+                    
+                </div>  
+                <div class="footer">
+                    
+                    <div class="foo-ter">
+                        
+                        <div class="foo-ter-btn">
+                            <h:outputLabel for="address1" value="log-on  by" />
+                        </div>
+                        <div class="foo-ter-btn">
+                            <h:outputLabel for="address1" value="Date and time" />
+                        </div>
+                           
+                        <div class="foo-ter-btn">
+                              <h:commandButton type="button" value="logout" styleClass="log-out"/>
+                        </div>
+                         
+                    </div>
+
+                </div>
+                    
+                
+            </div>
+        </div>
+        
+    </h:body>
+</html>
+
